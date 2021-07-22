@@ -42,70 +42,70 @@ class ProjectIHBQ extends Component {
             <div className="project-page-video-container">
               <MutedPlayer
                 className="project-page-video-player"
-                autoPlay={true}
+                autoPlay={false}
                 loop={true}
                 muted={true}
                 src={Clips[0]}>
               </MutedPlayer>
               <MutedPlayer
                 className="project-page-video-player"
-                autoPlay={true}
+                autoPlay={false}
                 loop={true}
                 muted={true}
                 src={Clips[1]}>
               </MutedPlayer>
               <MutedPlayer
                 className="project-page-video-player"
-                autoPlay={true}
+                autoPlay={false}
                 loop={true}
                 muted={true}
                 src={Clips[2]}>
               </MutedPlayer>
               <MutedPlayer
                 className="project-page-video-player"
-                autoPlay={true}
+                autoPlay={false}
                 loop={true}
                 muted={true}
                 src={Clips[5]}>
               </MutedPlayer>
               <MutedPlayer
                 className="project-page-video-player"
-                autoPlay={true}
+                autoPlay={false}
                 loop={true}
                 muted={true}
                 src={Clips[6]}>
               </MutedPlayer>
               <MutedPlayer
                 className="project-page-video-player"
-                autoPlay={true}
+                autoPlay={false}
                 loop={true}
                 muted={true}
                 src={Clips[9]}>
               </MutedPlayer>
               <MutedPlayer
                 className="project-page-video-player"
-                autoPlay={true}
+                autoPlay={false}
                 loop={true}
                 muted={true}
                 src={Clips[10]}>
               </MutedPlayer>
               <MutedPlayer
                 className="project-page-video-player"
-                autoPlay={true}
+                autoPlay={false}
                 loop={true}
                 muted={true}
                 src={Clips[11]}>
               </MutedPlayer>
               <MutedPlayer
                 className="project-page-video-player"
-                autoPlay={true}
+                autoPlay={false}
                 loop={true}
                 muted={true}
                 src={Clips[14]}>
               </MutedPlayer>
               <MutedPlayer
                 className="project-page-video-player"
-                autoPlay={true}
+                autoPlay={false}
                 loop={true}
                 muted={true}
                 src={Clips[15]}>
@@ -118,56 +118,56 @@ class ProjectIHBQ extends Component {
             <div className="project-page-video-container">
             <MutedPlayer
                 className="project-page-video-player"
-                autoPlay={true}
+                autoPlay={false}
                 loop={true}
                 muted={true}
                 src={Clips[3]}>
               </MutedPlayer>
               <MutedPlayer
                 className="project-page-video-player"
-                autoPlay={true}
+                autoPlay={false}
                 loop={true}
                 muted={true}
                 src={Clips[4]}>
               </MutedPlayer>
               <MutedPlayer
                 className="project-page-video-player"
-                autoPlay={true}
+                autoPlay={false}
                 loop={true}
                 muted={true}
                 src={Clips[7]}>
               </MutedPlayer>
               <MutedPlayer
                 className="project-page-video-player"
-                autoPlay={true}
+                autoPlay={false}
                 loop={true}
                 muted={true}
                 src={Clips[8]}>
               </MutedPlayer>
               <MutedPlayer
                 className="project-page-video-player"
-                autoPlay={true}
+                autoPlay={false}
                 loop={true}
                 muted={true}
                 src={Clips[12]}>
               </MutedPlayer>
               <MutedPlayer
                 className="project-page-video-player"
-                autoPlay={true}
+                autoPlay={false}
                 loop={true}
                 muted={true}
                 src={Clips[13]}>
               </MutedPlayer>
               <MutedPlayer
                 className="project-page-video-player"
-                autoPlay={true}
+                autoPlay={false}
                 loop={true}
                 muted={true}
                 src={Clips[16]}>
               </MutedPlayer>
               <MutedPlayer
                 className="project-page-video-player"
-                autoPlay={true}
+                autoPlay={false}
                 loop={true}
                 muted={true}
                 src={Clips[17]}>

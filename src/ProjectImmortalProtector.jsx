@@ -34,7 +34,7 @@ class ProjectImmortalProtector extends Component {
               <div className="project-page-video">
                 <MutedPlayer
                   className="project-page-video-player"
-                  autoPlay={true}
+                  autoPlay={false}
                   loop={true}
                   muted={true}
                   src={Clips[18]}>

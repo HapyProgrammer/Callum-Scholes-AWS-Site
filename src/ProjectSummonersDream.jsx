@@ -122,12 +122,12 @@ class ProjectSummonersDream extends Component {
                 </div>
                 <div className="project-page-video">
                 <MutedPlayer
-                className="project-page-video-player"
-                autoPlay={true}
-                loop={true}
-                muted={true}
-                src={Clips[24]}>
-              </MutedPlayer>
+                    className="project-page-video-player"
+                    autoPlay={false}
+                    loop={true}
+                    muted={true}
+                    src={Clips[24]}>
+                </MutedPlayer>
 			    </div>
                 <p>This mod adds 3 new summons and 1 new sentry turret. 2 of the summons and the sentry turret use existing AI already built into Terraria’s code. For each of the summons and sentries, I had to make new recipes to craft each item. I also had to balance the summons so they wouldn’t make all the boss battles trivial. These summons do enough consistent damage to allow you to play the summoners play style without relying too much on grinding for powerful rare summons.</p>
             </div>
