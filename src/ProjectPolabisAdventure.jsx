@@ -163,6 +163,11 @@ class ProjectPolabisAdventure extends Component {
     componentDidMount(){
         this.props.updateCurrentPage(3);
     }
+
+	
+	handleMuteComponent(e){
+		e.muted = true;
+	  }
     
   render() {
     return (
@@ -183,7 +188,8 @@ class ProjectPolabisAdventure extends Component {
 				<video
 					autoPlay
 					loop
-					muted>
+					muted
+					onLoad={(e)=>this.handleMuteComponent(e)}>
 					<source src={Clips[20]} type ="video/mp4"/>
 				</video>
 			</div>
@@ -222,19 +228,22 @@ class ProjectPolabisAdventure extends Component {
 				<video
 					autoPlay
 					loop
-					muted>
+					muted
+					onLoad={(e)=>this.handleMuteComponent(e)}>
 					<source src={Clips[23]} type ="video/mp4"/>
 				</video>
 				<video
 					autoPlay
 					loop
-					muted>
+					muted
+					onLoad={(e)=>this.handleMuteComponent(e)}>
 					<source src={Clips[22]} type ="video/mp4"/>
 				</video>
 				<video
 					autoPlay
 					loop
-					muted>
+					muted
+					onLoad={(e)=>this.handleMuteComponent(e)}>
 					<source src={Clips[21]} type ="video/mp4"/>
 				</video>
 			</div>

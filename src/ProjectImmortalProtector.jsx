@@ -18,6 +18,10 @@ class ProjectImmortalProtector extends Component {
     this.props.updateCurrentPage(3);
   }
 
+  handleMuteComponent(e){
+    e.muted = true;
+  }
+
   render() {
     return (
       <div className="project-page">
@@ -34,7 +38,8 @@ class ProjectImmortalProtector extends Component {
                 <video
                   autoPlay
                   loop
-                  muted>
+                  muted
+                  onLoad={(e)=>this.handleMuteComponent(e)}>
                   <source src={Clips[18]} type ="video/mp4"/>
                 </video>
               </div>

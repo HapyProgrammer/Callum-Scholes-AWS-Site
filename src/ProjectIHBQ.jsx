@@ -18,6 +18,10 @@ class ProjectIHBQ extends Component {
     this.props.updateCurrentPage(3);
   }
 
+  handleMuteComponent(e){
+    e.muted = true;
+  }
+
   render() {
     return (
       <div className="project-page">
@@ -42,61 +46,71 @@ class ProjectIHBQ extends Component {
               <video
                   autoPlay
                   loop
-                  muted>
+                  muted
+                  onLoad={(e)=>this.handleMuteComponent(e)}>
                   <source src={Clips[0]} type ="video/mp4"/>
               </video>
               <video
                   autoPlay
                   loop
-                  muted>
+                  muted
+                  onLoad={(e)=>this.handleMuteComponent(e)}>
                   <source src={Clips[1]} type ="video/mp4"/>
               </video>
               <video
                   autoPlay
                   loop
-                  muted>
+                  muted
+                  onLoad={(e)=>this.handleMuteComponent(e)}>
                   <source src={Clips[2]} type ="video/mp4"/>
               </video>
               <video
                   autoPlay
                   loop
-                  muted>
+                  muted
+                  onLoad={(e)=>this.handleMuteComponent(e)}>
                   <source src={Clips[5]} type ="video/mp4"/>
               </video>
               <video
                   autoPlay
                   loop
-                  muted>
+                  muted
+                  onLoad={(e)=>this.handleMuteComponent(e)}>
                   <source src={Clips[6]} type ="video/mp4"/>
               </video>
               <video
                   autoPlay
                   loop
-                  muted>
+                  muted
+                  onLoad={(e)=>this.handleMuteComponent(e)}>
                   <source src={Clips[9]} type ="video/mp4"/>
               </video>
               <video
                   autoPlay
                   loop
-                  muted>
+                  muted
+                  onLoad={(e)=>this.handleMuteComponent(e)}>
                   <source src={Clips[10]} type ="video/mp4"/>
               </video>
               <video
                   autoPlay
                   loop
-                  muted>
+                  muted
+                  onLoad={(e)=>this.handleMuteComponent(e)}>
                   <source src={Clips[11]} type ="video/mp4"/>
               </video>
               <video
                   autoPlay
                   loop
-                  muted>
+                  muted
+                  onLoad={(e)=>this.handleMuteComponent(e)}>
                   <source src={Clips[14]} type ="video/mp4"/>
               </video>
               <video
                   autoPlay
                   loop
-                  muted>
+                  muted
+                  onLoad={(e)=>this.handleMuteComponent(e)}>
                   <source src={Clips[15]} type ="video/mp4"/>
               </video>
 			      </div>
@@ -108,49 +122,57 @@ class ProjectIHBQ extends Component {
               <video
                   autoPlay
                   loop
-                  muted>
+                  muted
+                  onLoad={(e)=>this.handleMuteComponent(e)}>
                   <source src={Clips[3]} type ="video/mp4"/>
               </video>
               <video
                   autoPlay
                   loop
-                  muted>
+                  muted
+                  onLoad={(e)=>this.handleMuteComponent(e)}>
                   <source src={Clips[4]} type ="video/mp4"/>
               </video>
               <video
                   autoPlay
                   loop
-                  muted>
+                  muted
+                  onLoad={(e)=>this.handleMuteComponent(e)}>
                   <source src={Clips[7]} type ="video/mp4"/>
               </video>
               <video
                   autoPlay
                   loop
-                  muted>
+                  muted
+                  onLoad={(e)=>this.handleMuteComponent(e)}>
                   <source src={Clips[8]} type ="video/mp4"/>
               </video>
               <video
                   autoPlay
                   loop
-                  muted>
+                  muted
+                  onLoad={(e)=>this.handleMuteComponent(e)}>
                   <source src={Clips[12]} type ="video/mp4"/>
               </video>
               <video
                   autoPlay
                   loop
-                  muted>
+                  muted
+                  onLoad={(e)=>this.handleMuteComponent(e)}>
                   <source src={Clips[13]} type ="video/mp4"/>
               </video>
               <video
                   autoPlay
                   loop
-                  muted>
+                  muted
+                  onLoad={(e)=>this.handleMuteComponent(e)}>
                   <source src={Clips[16]} type ="video/mp4"/>
               </video>
               <video
                   autoPlay
                   loop
-                  muted>
+                  muted
+                  onLoad={(e)=>this.handleMuteComponent(e)}>
                   <source src={Clips[17]} type ="video/mp4"/>
               </video>
 			      </div>
