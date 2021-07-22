@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="87.3125mm"
+   height="87.3125mm"
+   viewBox="0 0 87.3125 87.3125"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="Email.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:lockguides="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:object-nodes="false"
+     inkscape:zoom="1.7827662"
+     inkscape:cx="155.93744"
+     inkscape:cy="159.02254"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-41.408661,-73.179077)"
+     style="display:inline">
+    <path
+       id="path846"
+       style="fill:#1a1a1a;stroke-width:0.892675"
+       d="M 165 0 A 165 165 0 0 0 0 165 A 165 165 0 0 0 165 330 A 165 165 0 0 0 330 165 A 165 165 0 0 0 165 0 z M 52.355469 99.917969 L 278.4375 99.917969 L 278.4375 100.11133 L 166.98242 158.22266 L 52.355469 100.12305 L 52.355469 99.917969 z M 278.4375 104.11133 L 278.4375 234.80664 L 52.355469 234.80664 L 52.355469 104.12305 L 166.98242 162.22266 L 278.4375 104.11133 z "
+       transform="matrix(0.26458333,0,0,0.26458333,41.408661,73.179077)" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Layer 2"
+     style="display:inline" />
+</svg>

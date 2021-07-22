@@ -1,0 +1,682 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=PT+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "PT Sans";
+  background-color: rgb(25, 25, 25);
+  color: rgb(220,220,220);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight:500;
+}
+
+p{
+  font-family: "PT Sans";
+}
+
+body{
+  overflow-x:hidden;
+}
+
+/************************************ Header ************************************/
+.header .title,
+.header .title-container,
+.header .title h1,
+.header .nav,
+.header .nav .nav-link,
+.header {
+  background-color: rgb(25, 25, 25);
+}
+
+.header {
+  position:relative;
+  width: 100%;
+  height: 80px;
+  overflow:hidden;
+  border-bottom: 1px solid rgb(220,220,220);
+}
+
+.header-container{
+  width:80%;
+  
+}
+
+.header .title-container{
+  position:relative;
+  background-color:transparent;
+  display:inline-block;
+  height:60px;
+  vertical-align: middle;
+  text-align: center;
+  padding:20px 0;
+  left:100px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.header .title{
+  display:inline;
+  background-color:transparent;
+  pointer-events:initial;
+  font-family: 'IBM Plex Mono', monospace;
+  color:rgb(220,220,220);
+
+}
+
+.header .title h1{
+  font-size: 32px;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.header .nav {
+  position: absolute;
+
+  background-color: transparent;
+  height: 80px;
+  margin-right:20px;
+  right:100px;
+  top:10px;
+}
+
+.header .nav .nav-link .button-container {
+  font-weight: 500;
+  float: left;
+  text-align: center;
+  background-color: rgb(25, 25, 25);
+  color:rgb(220,220,220);
+  padding: 15px 0;
+  height: 100%;
+  width: 130px;
+  font-size: 24px;
+  font-family: 'IBM Plex Mono', monospace;
+  transform:scale(1,1);
+  transition: color 100ms linear;
+}
+
+.header .nav .nav-link .button-container:hover {
+ color: #ac3d59;
+ transition: color 100ms linear;
+}
+
+.header .nav .nav-link {
+  text-decoration: none;
+}
+
+.header .nav .nav-link a {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+}
+
+/************************************ Home ************************************/
+.home-container {
+  position: absolute;
+  top: 80px;
+  height: 100%;
+  width:100%;
+}
+
+.home-container .about-section h2 {  
+  display:inline;
+  margin: auto;
+  text-align: center;
+  background-color: transparent;
+  font-size: 36px;
+}
+
+.home-container .about-section .intro-container {
+  position: absolute;
+  display:block;
+  height: 100%;
+  width:100%;
+  background-color: transparent;
+}
+
+.home-container .about-section .intro-container div{
+  position: relative;
+  display:block;
+  min-Width: 400px;
+  width:820px;
+  margin:100px auto;
+  background-color: transparent;
+}
+
+.home-container .about-section .intro-container h2{
+  display:inline;
+  background-color: transparent;
+  text-shadow: 0px 0px 5px #111;
+}
+
+.home-container .about-section {
+  position:relative;  
+  display: block;
+  width: 100%;
+  min-height: 326px;
+  height:33vh;
+  box-shadow: 0 -200px 100px 5px rgb(25, 25, 25) inset;
+}
+
+/************************************ Display Carousel ************************************/
+
+.home-container .home-display-section{
+  position:relative;  
+  display: block;
+  width: 100%;
+  height:100%;
+  background-color: transparent;
+}
+
+.home-display-carousel{
+  overflow: hidden;
+
+  background-color: transparent;
+  margin: 20px auto;
+  min-Width: 400px;
+  width:820px;
+  height:794px;
+  display:grid;
+  grid-template-columns: 400px 400px;
+  grid-row: auto auto;
+  grid-column-gap:20px;
+  grid-row-gap: 20px;
+}
+
+.home-display-image-container .home-display-image-link .hover-highlight{
+  position:absolute;
+  top:0;
+  width: 400px;
+  height: 389px;
+  background-color: transparent;
+  transition: background-color 100ms ease-in-out;
+}
+
+.home-display-image-container .home-display-image-link .hover-highlight:hover{
+  background-color: rgba(255,255,255,0.1);
+  transition: background-color 100ms ease-in-out;
+}
+
+.home-display-card,
+.home-view-more-card{
+  display:inline-block;
+  width: 400px;
+  overflow: hidden;
+
+}
+.home-view-more-card{
+  background-color: #e93c50;
+}
+
+.home-display-image-container,
+.home-view-more-container{
+  text-align: center;
+  width:100%;
+  height:100%;
+}
+
+.home-display-image-container .home-display-image-link{
+  display:inline-block;
+  overflow:hidden;
+}
+
+.home-display-image-container .home-display-image-link div{
+  background-color: white;
+}
+
+.home-display-image-container .home-display-image-link img{
+  width:400px;
+  height:400px;
+  background-color:white;
+  opacity: 1;
+  transform: scale(1.78,1);
+  transition: opacity 100ms ease-in-out;
+}
+
+.home-display-image-container .home-display-image-link img:hover{
+  opacity: 0.85;
+  transition: opacity 100ms ease-in-out;
+}
+
+
+/************************************ Home bottom ************************************/
+
+
+.home-display-card-bottom,
+.home-view-more-card-bottom{
+  display:inline-block;
+  width: 820px;
+  overflow: hidden;
+
+}
+.home-view-more-card-bottom{
+  background-color: #e93c50;
+}
+
+.home-display-image-container-bottom,
+.home-view-more-container-bottom{
+  text-align: center;
+  width:100%;
+  height:100%;
+}
+
+
+.home-display-image-container-bottom .home-display-image-link-bottom{
+  display:inline-block;
+}
+
+.home-display-image-container-bottom .home-display-image-link-bottom div{
+  background-color: white;
+}
+
+.home-display-image-container-bottom .home-display-image-link-bottom img{
+  width:820px;
+  height:400px;
+  background-color:white;
+  opacity: 1;
+  transition: opacity 100ms ease-in-out;
+}
+
+.home-display-image-container-bottom .home-display-image-link-bottom img:hover{
+  opacity: 0.85;
+  transition: opacity 100ms ease-in-out;
+}
+
+/************************************ Project Container ************************************/
+
+.project-container {
+  position: relative;
+  text-align: center;
+  width: 100vw;
+  top:80px;
+  height:auto
+}
+
+.project-container .personal-projects {
+  position: relative;
+  width: 100%;
+}
+
+/************************************ Main Project ************************************/
+.main-projects{
+  display:inline-block;
+  text-align:left;
+  width: 60%;
+}
+
+.main-projects h1{
+  margin:20px 0;
+}
+
+.main-projects-display .project-section {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+
+  background-color: transparent;
+  padding-bottom: 20px;
+  overflow:hidden;
+  text-decoration: none;
+  margin:20px 0;
+  height: 469px;
+
+}
+
+.main-projects-display .project-section .project-image {
+  width: 100%;
+  filter: brightness(100%);
+  background-color:white;
+  transition: filter 100ms ease-in-out, opacity 100ms ease-in-out
+}
+
+.main-projects-display .project-section .project-image:hover {
+  cursor: pointer;
+  opacity: 0.85;
+  transition: opacity 100ms ease-in-out;
+}
+
+.main-projects-display .project-section .project-image-wrapper {
+  float:left;
+  overflow: hidden;
+  height:400px;
+  width:70%;
+  margin: 0;
+  background-color: transparent;
+}
+
+
+.main-projects-display .project-section:nth-child(even) .project-image-wrapper{
+  float:right;
+}
+
+.main-projects-display .project-section .project-description-wrapper{
+  float:right;
+  overflow: hidden;
+  height:400px;
+  width:30%;
+  margin:0;
+  z-index: 5;
+  text-align: left;
+}
+
+.main-projects-display .project-section:nth-child(even) .project-description-wrapper{
+  float:left;
+}
+
+.main-projects-display .project-section .project-languages-used {
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+
+.main-projects-display .project-section .project-title{
+  background-color: transparent;
+}
+
+.main-projects-display .project-section .project-languages-used p {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+  margin: 2px;
+  background-color: lightcoral;
+  width: 150px;
+  color: rgb(20, 20, 20);
+}
+.main-projects-display .project-section ul,
+.main-projects-display .project-section li,
+.main-projects-display .project-section h2 {
+  position:relative;
+  background-color: transparent; 
+  padding-left:0;
+  background-color: rgb(220,220,220);
+}
+
+.main-projects-display .project-section h2{
+  font-size: 32px;
+}
+
+.main-projects-display .project-highlights-container{
+  display:inline-block;
+  padding-top: 40px;
+  text-align: center;
+  width:80%;
+  height:100%;
+}
+
+.main-projects-display .project-section ul {
+  list-style: none;
+  width:100%;
+  height:100%;
+  left:0;
+  text-align: left;
+}
+
+.main-projects-display .project-section li {
+  padding-left: 50px;
+  font-size: 20px;
+  line-height: 1.5;
+  width:100%;
+  color:black;
+  float:left;
+
+}
+
+.main-projects-display .project-background{
+  position:absolute;
+  background-color: rgb(220,220,220);
+  width:100%;
+  height:100%;
+}
+
+.main-projects-display .project-background-image{
+  width:100%;
+  background-color: rgb(220,220,220);
+  z-index: 3;
+}
+
+/************************************ Project Page ************************************/
+
+.project-page{
+  position: relative;
+  width: 100vw;
+
+  height:auto
+}
+
+.project-page-container{
+  max-width:900px;
+  width: 100%;
+  margin:auto;
+}
+
+.project-page img, .project-page video{
+  max-height: 500px;
+  width:100%;
+}
+
+.project-page-image, .project-page-video{
+  text-align: center;
+
+}
+
+.project-page-title,
+.project-page-description{
+  margin: 40px 0;
+}
+
+.project-page p {
+  line-height: 1.5;
+  padding:40px 0;
+  font-size: 1.04167vw;
+}
+
+.project-page h1{
+  text-align: center;
+  margin: 5px;
+  padding: 40px 0;
+}
+
+.project-page-title h1{
+  font-size: 50px;
+}
+
+.project-page-description{
+  border-top: 1px solid rgb(220,220,220);
+}
+
+
+/************************************ Project Code Block ************************************/
+
+.project-code-block {
+  position: relative;
+
+  width: 100%;
+  height: 500px;
+  overflow: scroll;
+}
+
+.project-code-block span {
+  background-color: transparent;
+}
+
+/************************************ Contact ************************************/
+.contact-section {
+  position: absolute;
+  top: 300px;
+  width: 100%;
+}
+
+.contact-section .copy-confirm {
+  display: block;
+  margin: auto;
+  width: 200px;
+  bottom: 0;
+}
+
+.contact-section h1{
+  font-size: 64px;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.contact-section h2 {
+  color: lightgreen;
+  background-color: transparent;
+  opacity: 0;
+  font-size: 46px;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.contact-section h3{
+  display: inline-block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 32px;
+}
+
+.contact-section h3:hover {
+  cursor: pointer;
+  color: #ac3d59;
+}
+
+.contact-section .center-wrapper {
+  display: block;
+  top: 100px;
+  width: 60%;
+  margin: auto;
+}
+
+.contact-section .linkedin-contact,
+.contact-section .email-contact,
+.contact-section .github-contact,
+.contact-section .resume-contact {
+  display: block;
+  height: auto;
+  width: 400px;
+  margin: 2px 0;
+}
+
+.contact-section .email-contact{
+  margin-bottom: 50px;
+}
+
+.contact-section .resume-contact a{
+  text-decoration: none;
+  font-size: 32px;
+}
+/************************************ fade transition ************************************/
+
+.fadeleft-appear,
+.fadeleft-enter {
+  opacity: 0;
+  left: -200px;
+  z-index: 1;
+}
+
+.fadeleft-appear-active,
+.fadeleft-enter.fadeleft-enter-active {
+  opacity: 1;
+  left: 100px;
+  transition: opacity 300ms linear 150ms, left 300ms ease-out 150ms;
+}
+
+.fadeleft-exit {
+  left:0px;
+  opacity: 1;
+}
+
+.fadeleft-exit.fadeleft-exit-active {
+  opacity: 0;
+  left: -200px;
+  transition: opacity 150ms linear, left 150ms ease-in;
+}
+
+.faderight-appear,
+.faderight-enter {
+  opacity: 0;
+  right: -200px;
+  z-index: 1;
+}
+
+.faderight-appear-active,
+.faderight-enter.faderight-enter-active {
+  opacity: 1;
+  right: 100px;
+  transition: opacity 300ms linear 150ms, right 300ms ease-out 150ms;
+}
+
+.faderight-exit {
+  right:0px;
+  opacity: 1;
+}
+
+.faderight-exit.faderight-exit-active {
+  opacity: 0;
+  right: -200px;
+  transition: opacity 150ms linear, right 150ms ease-in;
+}
+
+.fade-appear,
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear 150ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 150ms linear;
+}
+
+/************************************ Pop up and fade animation ************************************/
+
+@keyframes popup {
+  0% {
+    transform: translate(0px, 50px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0px, -10px);
+    opacity: 0;
+  }
+}
+
+/************************************Scroll Bar ************************************/
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 20px;
+  background: rgb(220,220,220);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(167, 167, 167);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
