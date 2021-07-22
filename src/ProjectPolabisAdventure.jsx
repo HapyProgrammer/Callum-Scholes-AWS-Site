@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 import { updateCurrentPage } from './actions/pageActions';
 import Images from "./components/Images.js";
 import Clips from "./components/Clips.js";
-import { MutedPlayer } from "react-muted-video-player";
 
 
 
@@ -182,13 +181,12 @@ class ProjectPolabisAdventure extends Component {
         <div className="project-page-description">
             <h1>Cloth physics</h1>
 			<div className="project-page-video">
-			<MutedPlayer
+			<video
                 className="project-page-video-player"
-                autoPlay={false}
-                loop={true}
-                muted={true}
-                src={Clips[20]}>
-              </MutedPlayer>
+                muted
+                controls>
+                <source src={Clips[20]} type="video/mp4"/>
+              </video>
 			</div>
             <p>This system helps make Polabi’s cloak more interesting. Through Unreal’s cloth system I was able to make it look rigid enough to give off a more rubbery feel, while still having the cloth-like physics.</p>
         </div>
@@ -222,27 +220,24 @@ class ProjectPolabisAdventure extends Component {
         <div className="project-page-description">
             <h1>Cutscenes</h1>
 			<div className="project-page-video-container">
-			<MutedPlayer
+			<video
                 className="project-page-video-player"
-                autoPlay={false}
-                loop={true}
-                muted={true}
-                src={Clips[23]}>
-              </MutedPlayer>
-			  <MutedPlayer
+                muted
+                controls>
+                <source src={Clips[23]} type="video/mp4"/>
+              </video>
+			  <video
                 className="project-page-video-player"
-                autoPlay={false}
-                loop={true}
-                muted={true}
-                src={Clips[22]}>
-              </MutedPlayer>
-			  <MutedPlayer
+                muted
+                controls>
+                <source src={Clips[22]} type="video/mp4"/>
+              </video>
+			  <video
                 className="project-page-video-player"
-                autoPlay={false}
-                loop={true}
-                muted={true}
-                src={Clips[21]}>
-              </MutedPlayer>
+                muted
+                controls>
+                <source src={Clips[21]} type="video/mp4"/>
+              </video>
 			</div>
             <p>Through using Unreal’s sequencer system, I was able to add cutscenes into my game. The cutscenes are pre-rendered and added in.</p>
         </div>

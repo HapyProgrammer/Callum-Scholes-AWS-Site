@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { updateCurrentPage } from './actions/pageActions';
 import Images from "./components/Images.js";
 import Clips from "./components/Clips.js";
-import { MutedPlayer } from "react-muted-video-player";
 
 function ScrollToTop() {
   useEffect(() => {
@@ -32,13 +31,12 @@ class ProjectImmortalProtector extends Component {
                 <img src={Images[6]} alt="ImmortalProtector"/>
               </div>
               <div className="project-page-video">
-                <MutedPlayer
-                  className="project-page-video-player"
-                  autoPlay={false}
-                  loop={true}
-                  muted={true}
-                  src={Clips[18]}>
-                </MutedPlayer>
+              <video
+                className="project-page-video-player"
+                muted
+                controls>
+                <source src={Clips[18]} type="video/mp4"/>
+              </video>
               </div>
             </div>
             <p>Immortal protector is the winner of the “48 secret jam - September 2018” with the themes ‘Island’ and ‘Life.</p>

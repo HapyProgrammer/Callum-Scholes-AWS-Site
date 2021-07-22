@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 import { updateCurrentPage } from './actions/pageActions';
 import Images from "./components/Images.js";
 import Clips from "./components/Clips.js";
-import { MutedPlayer } from "react-muted-video-player";
 
 function ScrollToTop() {
     useEffect(() => {
@@ -121,13 +120,12 @@ class ProjectSummonersDream extends Component {
                     <img src={Images[0]} alt="SummonersDream"/>                   
                 </div>
                 <div className="project-page-video">
-                <MutedPlayer
+                <video
                     className="project-page-video-player"
-                    autoPlay={false}
-                    loop={true}
-                    muted={true}
-                    src={Clips[24]}>
-                </MutedPlayer>
+                    muted
+                    controls>
+                    <source src={Clips[24]} type="video/mp4"/>
+                </video>
 			    </div>
                 <p>This mod adds 3 new summons and 1 new sentry turret. 2 of the summons and the sentry turret use existing AI already built into Terraria’s code. For each of the summons and sentries, I had to make new recipes to craft each item. I also had to balance the summons so they wouldn’t make all the boss battles trivial. These summons do enough consistent damage to allow you to play the summoners play style without relying too much on grinding for powerful rare summons.</p>
             </div>
