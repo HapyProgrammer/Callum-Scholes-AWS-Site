@@ -459,7 +459,7 @@ body{
   margin:auto;
 }
 
-.project-page img, .project-page video{
+.project-page img, .project-page .project-page-video-player{
   max-height: 500px;
   width:100%;
 }

@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { updateCurrentPage } from './actions/pageActions';
 import Images from "./components/Images.js";
 import Clips from "./components/Clips.js";
+import { MutedPlayer } from "react-muted-video-player";
 
 function ScrollToTop() {
   useEffect(() => {
@@ -31,12 +32,13 @@ class ProjectLuminator extends Component {
                 <img src={Images[9]} alt="Luminator"/>
               </div>
               <div className="project-page-video">
-                <video
-                  autoPlay
-                  loop
-                  muted="true">
-                  <source src={Clips[19]} type ="video/mp4"/>
-                </video>
+              <MutedPlayer
+                className="project-page-video-player"
+                autoPlay={true}
+                loop={true}
+                muted={true}
+                src={Clips[19]}>
+              </MutedPlayer>
               </div>
             </div>
             <p>Lumiator is a week-long game jam project with the theme ‘Light’.</p>
