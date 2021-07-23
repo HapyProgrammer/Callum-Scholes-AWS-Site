@@ -20,6 +20,7 @@ import PAOutlineShaderBP1 from "./Images/OutlineShaderBP1.png";
 import PAOutlineShaderBP2 from "./Images/OutlineShaderBP2.png";
 import PATitle from "./Images/PolabisAdventureTitle.png";
 import SDMoonlordFight from "./Images/SDMoonlordFight.png";
+import PACelShader from "./Images/PACelShader.PNG";
 
 const ImageArray = [
   SummonersDream,
@@ -43,7 +44,8 @@ const ImageArray = [
   PAOutlineShaderBP1,
   PAOutlineShaderBP2,
   PATitle,
-  SDMoonlordFight
+  SDMoonlordFight,
+  PACelShader
 ];
 
 export default ImageArray;

@@ -279,6 +279,7 @@ class ProjectPolabisAdventure extends Component {
 				<img src={Images[17]} alt="Outline Shader BP"/> 
 				<img src={Images[18]} alt="Outline Shader BP"/> 
 				<img src={Images[19]} alt="Outline Shader BP"/> 
+				<img src={Images[22]} alt="Outline Shader"/>
         	</div>
             <p>I used a variety of shaders in this project. I made a toon shader and an outline shader for the main aesthetic of the game. I also added a “dark world” shader for the ending of the game. These are all added in post-processing. The barrier I made and some hit effects are some examples of shaders not included in post-processing.</p>
         </div>
