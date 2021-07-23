@@ -2,7 +2,7 @@ import React, { Component, useEffect } from "react";
 import { connect } from 'react-redux';
 import { updateCurrentPage } from './actions/pageActions';
 import Images from "./components/Images.js";
-import Clips from "./components/Clips.js";
+import ReactPlayer from 'react-player'
 
 function ScrollToTop() {
   useEffect(() => {
@@ -31,12 +31,11 @@ class ProjectLuminator extends Component {
                 <img src={Images[9]} alt="Luminator"/>
               </div>
               <div className="project-page-video">
-              <video
-                className="project-page-video-player"
-                muted
-                controls>
-                <source src={Clips[19]} type="video/mp4"/>
-              </video>
+                <ReactPlayer 
+                  className="project-page-video-player"
+                  width='100%'
+                  height='506.25px'
+                  url = "https://youtu.be/ugoWFUBbZrE"/>
               </div>
             </div>
             <p>Lumiator is a week-long game jam project with the theme ‘Light’.</p>

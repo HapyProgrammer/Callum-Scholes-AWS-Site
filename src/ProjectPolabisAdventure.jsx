@@ -4,7 +4,7 @@ import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { connect } from 'react-redux';
 import { updateCurrentPage } from './actions/pageActions';
 import Images from "./components/Images.js";
-import Clips from "./components/Clips.js";
+import ReactPlayer from 'react-player';
 
 
 
@@ -41,11 +41,28 @@ const code0 = `void UFinnySpells::LightningField()
 		UE_LOG(LogTemp, Error, TEXT("Finny Spells Cant find lightning VFX"));
 		return;
 	}
-	EffectsComponent = UNiagaraFunctionLibrary::SpawnSystemAttached(LightningFieldVFX, FinnyCharacter->GetRootComponent(), FName("None"), FVector::ZeroVector, FRotator::ZeroRotator, FVector::OneVector , EAttachLocation::KeepRelativeOffset, true, ENCPoolMethod::None, true, true);
+	EffectsComponent = UNiagaraFunctionLibrary::SpawnSystemAttached(LightningFieldVFX, 
+		FinnyCharacter->GetRootComponent(), 
+		FName("None"), FVector::ZeroVector, 
+		FRotator::ZeroRotator, 
+		FVector::OneVector, 
+		EAttachLocation::KeepRelativeOffset, 
+		true, 
+		ENCPoolMethod::None, 
+		true, 
+		true);
 
 	// Timers
-	GetWorld()->GetTimerManager().SetTimer(DamageDelayTimer, this, &UFinnySpells::DealContinuousDamageAfterDelay, LightningDamageDelay, true);
-	GetWorld()->GetTimerManager().SetTimer(CastTimer, this, &UFinnySpells::ResetDamageField, SpellsParams[0].Duration, false);
+	GetWorld()->GetTimerManager().SetTimer(DamageDelayTimer, 
+		this, 
+		&UFinnySpells::DealContinuousDamageAfterDelay, 
+		LightningDamageDelay, 
+		true);
+	GetWorld()->GetTimerManager().SetTimer(CastTimer, 
+		this, 
+		&UFinnySpells::ResetDamageField, 
+		SpellsParams[0].Duration, 
+		false);
 }
 `.trim();
 
@@ -73,16 +90,20 @@ const code1 = `void AFinnyAIController::Tick(float DeltaSeconds)
 		Blackboard->SetValueAsBool(TEXT("bIsIdle"), FinnyCharacter->bIsIdle);
 		Blackboard->SetValueAsBool(TEXT("bIsFollowing"), FinnyCharacter->bIsFollowing);
 		Blackboard->SetValueAsBool(TEXT("bIsAggro"), FinnyCharacter->bIsAggro);
-		Blackboard->SetValueAsVector(TEXT("RandomPositionPolabi"), PlayerPawn->GetActorLocation() + Blackboard->GetValueAsVector("RandomPosition"));
+		Blackboard->SetValueAsVector(TEXT("RandomPositionPolabi"), 
+			PlayerPawn->GetActorLocation() + Blackboard->GetValueAsVector("RandomPosition"));
 
 		if (FinnyCharacter->bInCombat)
 		{
-			Blackboard->SetValueAsVector(TEXT("RandomPositionEnemy"), FinnyCharacter->ClosestEnemyPosition + Blackboard->GetValueAsVector("RandomPosition"));
+			Blackboard->SetValueAsVector(TEXT("RandomPositionEnemy"), 
+				FinnyCharacter->ClosestEnemyPosition + Blackboard->GetValueAsVector("RandomPosition"));
 			Blackboard->SetValueAsVector(TEXT("EnemyPosition"), FinnyCharacter->ClosestEnemyPosition);
-			if (FinnyCharacter->FinnyStats->Stats.FireRange > FVector::Dist(FinnyCharacter->GetActorLocation(), FinnyCharacter->ClosestEnemyPosition))
+			if (FinnyCharacter->FinnyStats->Stats.FireRange > FVector::Dist(FinnyCharacter->GetActorLocation(), 
+				FinnyCharacter->ClosestEnemyPosition))
 			{
 				Blackboard->SetValueAsBool(TEXT("bEnemyInRange"), true);
-				FRotator FinnyRot = UKismetMathLibrary::FindLookAtRotation(FinnyCharacter->GetActorLocation(), FinnyCharacter->ClosestEnemyPosition);
+				FRotator FinnyRot = UKismetMathLibrary::FindLookAtRotation(FinnyCharacter->GetActorLocation(), 
+					FinnyCharacter->ClosestEnemyPosition);
 				FinnyCharacter->SetActorRotation(FinnyRot);
 			}
 			else
@@ -111,7 +132,11 @@ void UPolabiSpells::PolabiLightningDash()
 	}
 	float DashSpeed = PolabiLightningDashDistance / PolabiLightningDashTime;
 	PlayerCharacter->LaunchCharacter(PlayerCharacter->GetActorForwardVector() * DashSpeed, false, false);
-	GetWorld()->GetTimerManager().SetTimer(LightningDashTimer, this, &UPolabiSpells::StopMovement, PolabiLightningDashTime, false);
+	GetWorld()->GetTimerManager().SetTimer(LightningDashTimer, 
+		this, 
+		&UPolabiSpells::StopMovement, 
+		PolabiLightningDashTime, 
+		false);
 
 	// Play effects
 	if (LightningDashVFX == nullptr)
@@ -119,7 +144,10 @@ void UPolabiSpells::PolabiLightningDash()
 		UE_LOG(LogTemp, Error, TEXT("No Lightning Dash VFX Equipped"));
 		return;
 	}
-	UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), LightningDashVFX, PlayerPawn->GetActorLocation(), PlayerPawn->GetActorRotation());
+	UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), 
+		LightningDashVFX, 
+		PlayerPawn->GetActorLocation(), 
+		PlayerPawn->GetActorRotation());
 
 	EndPolabiSpell();
 }
@@ -153,7 +181,11 @@ void UPolabiSpells::StitchLabiLightningBuff()
 	PlayerCharacter->GetCharacterMovement()->MaxWalkSpeed = LightningBuffSpeed;
 
 	// timer end -> EndSpell
-	GetWorld()->GetTimerManager().SetTimer(BuffTimer, this, &UPolabiSpells::EndStitchSpell, StitchSpellsParams[LastBuffSpellUsed].Duration, false);
+	GetWorld()->GetTimerManager().SetTimer(BuffTimer, 
+		this, 
+		&UPolabiSpells::EndStitchSpell, 
+		StitchSpellsParams[LastBuffSpellUsed].Duration, 
+		false);
 }
 `.trim();
 
@@ -181,13 +213,12 @@ class ProjectPolabisAdventure extends Component {
         <div className="project-page-description">
             <h1>Cloth physics</h1>
 			<div className="project-page-video">
-			<video
-                className="project-page-video-player"
-                muted
-                controls>
-                <source src={Clips[20]} type="video/mp4"/>
-              </video>
-			</div>
+                <ReactPlayer 
+                  className="project-page-video-player"
+                  width='100%'
+                  height='506.25px'
+                  url = "https://youtu.be/1t4C5VhI-UA"/>
+              </div>
             <p>This system helps make Polabi’s cloak more interesting. Through Unreal’s cloth system I was able to make it look rigid enough to give off a more rubbery feel, while still having the cloth-like physics.</p>
         </div>
         <div className="project-page-description">
@@ -220,24 +251,21 @@ class ProjectPolabisAdventure extends Component {
         <div className="project-page-description">
             <h1>Cutscenes</h1>
 			<div className="project-page-video-container">
-			<video
-                className="project-page-video-player"
-                muted
-                controls>
-                <source src={Clips[23]} type="video/mp4"/>
-              </video>
-			  <video
-                className="project-page-video-player"
-                muted
-                controls>
-                <source src={Clips[22]} type="video/mp4"/>
-              </video>
-			  <video
-                className="project-page-video-player"
-                muted
-                controls>
-                <source src={Clips[21]} type="video/mp4"/>
-              </video>
+			<ReactPlayer 
+                  className="project-page-video-player"
+                  width='100%'
+                  height='506.25px'
+                  url = "https://youtu.be/2zF_hZy2LyQ"/>
+			  <ReactPlayer 
+                  className="project-page-video-player"
+                  width='100%'
+                  height='506.25px'
+                  url = "https://youtu.be/Rd0ncel-dvQ"/>
+			  <ReactPlayer 
+                  className="project-page-video-player"
+                  width='100%'
+                  height='506.25px'
+                  url = "https://youtu.be/D9S5oMtFR1Y"/>
 			</div>
             <p>Through using Unreal’s sequencer system, I was able to add cutscenes into my game. The cutscenes are pre-rendered and added in.</p>
         </div>

@@ -460,13 +460,13 @@ body{
 }
 
 .project-page img, .project-page .project-page-video-player{
-  max-height: 500px;
+  max-height: 507px;
   width:100%;
 }
 
 .project-page-image, .project-page-video{
   text-align: center;
-
+  width: 100%;
 }
 
 .project-page-title,
