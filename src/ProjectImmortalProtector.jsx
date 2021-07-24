@@ -25,7 +25,7 @@ class ProjectImmortalProtector extends Component {
         <div className="project-page-container">
           <div className="project-page-title">
             <h1>Immortal Protector</h1>
-            <div className="project-page-image">
+   
               <div className="project-page-image-container">
                 <img src={Images[7]} alt="ImmortalProtector"/>
                 <img src={Images[6]} alt="ImmortalProtector"/>
@@ -37,7 +37,7 @@ class ProjectImmortalProtector extends Component {
                   height='506.25px'
                   url = "https://youtu.be/DcxcFay6A0Q"/>
               </div>
-            </div>
+            
             <p>Immortal protector is the winner of the “48 secret jam - September 2018” with the themes ‘Island’ and ‘Life.</p>
           </div>
           <div className="project-page-description">

@@ -202,87 +202,87 @@ class ProjectPolabisAdventure extends Component {
       <div className="project-page">
         <ScrollToTop/>
         <div className="project-page-container">
-        <div className="project-page-title">
-          <h1>Polabi's Adventure</h1>
-		  <div className="project-page-image-container">
-		  <img src={Images[20]} alt="Level"/> 
-              <img src={Images[16]} alt="Level"/> 
-        	</div>
-          <p>Polabi’s Adventure is an ARPG. You can unlock a variety of spells and add them to yourself and your buddies.</p>
-        </div>
-        <div className="project-page-description">
-            <h1>Cloth physics</h1>
-			<div className="project-page-video">
-                <ReactPlayer 
-                  className="project-page-video-player"
-                  width='100%'
-                  height='506.25px'
-                  url = "https://youtu.be/1t4C5VhI-UA"/>
-              </div>
-            <p>This system helps make Polabi’s cloak more interesting. Through Unreal’s cloth system I was able to make it look rigid enough to give off a more rubbery feel, while still having the cloth-like physics.</p>
-        </div>
-        <div className="project-page-description">
-            <h1>Bone chain</h1>
+			<div className="project-page-title">
+			<h1>Polabi's Adventure</h1>
 			<div className="project-page-image-container">
-              <img src={Images[15]} alt="Finny Bones"/> 
-        	</div>
-            <p>Due to Finny having no animations, it was fairly boring having him float around. Unreal’s bone chain system allows Finny to look more integrated into the world around him. However, Unreal’s bone chain system works starting from the root. To bypass this, I had to reverse the Armature to allow it to integrate nicely with Unreal’s system.</p>
-        </div>
-        <div className="project-page-description">
-            <h1>Player spell system</h1>
-			<SyntaxHighlighter className="project-code-block" language="csharp" style={ dracula }>
-                    {code0}
-                </SyntaxHighlighter>
-				<SyntaxHighlighter className="project-code-block" language="csharp" style={ dracula }>
-                    {code2}
-                </SyntaxHighlighter>
-            <p>The player and each of his buddies all have a unique spell architecture. Polabi’s spells can be very dynamic but mostly revolve around movement. Finny’s spells are mostly AOE spell effects. Lastly, Stitch’s spells are used to buff Polabi. </p>
-        </div>
-        <div className="project-page-description">
-            <h1>AI buddy</h1>
-			<div className="project-page-image-container">
-              <img src={Images[14]} alt="Finny AI"/> 
-        	</div>
-			<SyntaxHighlighter className="project-code-block" language="csharp" style={ dracula }>
-                    {code1}
-                </SyntaxHighlighter>
-            <p>I wanted Finny to feel integrated inside the world of the game. I added random bobbing both vertical and horizontally based on whether or not he is moving or idle. The bone chain system also helps with keeping him more visually interesting as he moves around. I also built a system where you can instruct him to be more aggressive or defensive in combat. This allows you to have some control over where Finny’s abilities target, whilst allowing Finny to freely move around during combat</p>
-        </div>
-        <div className="project-page-description">
-            <h1>Cutscenes</h1>
-			<div className="project-page-video-container">
-			<ReactPlayer 
-                  className="project-page-video-player"
-                  width='100%'
-                  height='506.25px'
-                  url = "https://youtu.be/2zF_hZy2LyQ"/>
-			  <ReactPlayer 
-                  className="project-page-video-player"
-                  width='100%'
-                  height='506.25px'
-                  url = "https://youtu.be/Rd0ncel-dvQ"/>
-			  <ReactPlayer 
-                  className="project-page-video-player"
-                  width='100%'
-                  height='506.25px'
-                  url = "https://youtu.be/D9S5oMtFR1Y"/>
+			<img src={Images[20]} alt="Level"/> 
+				<img src={Images[16]} alt="Level"/> 
+				</div>
+			<p>Polabi’s Adventure is an ARPG. You can unlock a variety of spells and add them to yourself and your buddies.</p>
 			</div>
-            <p>Through using Unreal’s sequencer system, I was able to add cutscenes into my game. The cutscenes are pre-rendered and added in.</p>
-        </div>
-        <div className="project-page-description">
-            <h1>Shaders</h1>
-			<div className="project-page-image-container">
-				<img src={Images[10]} alt="Barrier Shader BP"/> 
-				<img src={Images[11]} alt="Barrier Shader Mat"/> 
-				<img src={Images[12]} alt="Cel Shader BP"/> 
-				<img src={Images[13]} alt="Fakelabi Shader Mat"/> 
-				<img src={Images[17]} alt="Outline Shader BP"/> 
-				<img src={Images[18]} alt="Outline Shader BP"/> 
-				<img src={Images[19]} alt="Outline Shader BP"/> 
-				<img src={Images[22]} alt="Outline Shader"/>
-        	</div>
-            <p>I used a variety of shaders in this project. I made a toon shader and an outline shader for the main aesthetic of the game. I also added a “dark world” shader for the ending of the game. These are all added in post-processing. The barrier I made and some hit effects are some examples of shaders not included in post-processing.</p>
-        </div>
+			<div className="project-page-description">
+				<h1>Cloth physics</h1>
+				<div className="project-page-video">
+					<ReactPlayer 
+					className="project-page-video-player"
+					width='100%'
+					height='506.25px'
+					url = "https://youtu.be/1t4C5VhI-UA"/>
+				</div>
+				<p>This system helps make Polabi’s cloak more interesting. Through Unreal’s cloth system I was able to make it look rigid enough to give off a more rubbery feel, while still having the cloth-like physics.</p>
+			</div>
+			<div className="project-page-description">
+				<h1>Bone chain</h1>
+				<div className="project-page-image-container">
+				<img src={Images[15]} alt="Finny Bones"/> 
+				</div>
+				<p>Due to Finny having no animations, it was fairly boring having him float around. Unreal’s bone chain system allows Finny to look more integrated into the world around him. However, Unreal’s bone chain system works starting from the root. To bypass this, I had to reverse the Armature to allow it to integrate nicely with Unreal’s system.</p>
+			</div>
+			<div className="project-page-description">
+				<h1>Player spell system</h1>
+				<SyntaxHighlighter className="project-code-block" language="csharp" style={ dracula }>
+						{code0}
+					</SyntaxHighlighter>
+					<SyntaxHighlighter className="project-code-block" language="csharp" style={ dracula }>
+						{code2}
+					</SyntaxHighlighter>
+				<p>The player and each of his buddies all have a unique spell architecture. Polabi’s spells can be very dynamic but mostly revolve around movement. Finny’s spells are mostly AOE spell effects. Lastly, Stitch’s spells are used to buff Polabi. </p>
+			</div>
+			<div className="project-page-description">
+				<h1>AI buddy</h1>
+				<div className="project-page-image-container">
+				<img src={Images[14]} alt="Finny AI"/> 
+				</div>
+				<SyntaxHighlighter className="project-code-block" language="csharp" style={ dracula }>
+						{code1}
+					</SyntaxHighlighter>
+				<p>I wanted Finny to feel integrated inside the world of the game. I added random bobbing both vertical and horizontally based on whether or not he is moving or idle. The bone chain system also helps with keeping him more visually interesting as he moves around. I also built a system where you can instruct him to be more aggressive or defensive in combat. This allows you to have some control over where Finny’s abilities target, whilst allowing Finny to freely move around during combat</p>
+			</div>
+			<div className="project-page-description">
+				<h1>Cutscenes</h1>
+				<div className="project-page-video-container">
+				<ReactPlayer 
+					className="project-page-video-player"
+					width='100%'
+					height='506.25px'
+					url = "https://youtu.be/2zF_hZy2LyQ"/>
+				<ReactPlayer 
+					className="project-page-video-player"
+					width='100%'
+					height='506.25px'
+					url = "https://youtu.be/Rd0ncel-dvQ"/>
+				<ReactPlayer 
+					className="project-page-video-player"
+					width='100%'
+					height='506.25px'
+					url = "https://youtu.be/D9S5oMtFR1Y"/>
+				</div>
+				<p>Through using Unreal’s sequencer system, I was able to add cutscenes into my game. The cutscenes are pre-rendered and added in.</p>
+			</div>
+			<div className="project-page-description">
+				<h1>Shaders</h1>
+				<div className="project-page-image-container">
+					<img src={Images[10]} alt="Barrier Shader BP"/> 
+					<img src={Images[11]} alt="Barrier Shader Mat"/> 
+					<img src={Images[12]} alt="Cel Shader BP"/> 
+					<img src={Images[13]} alt="Fakelabi Shader Mat"/> 
+					<img src={Images[17]} alt="Outline Shader BP"/> 
+					<img src={Images[18]} alt="Outline Shader BP"/> 
+					<img src={Images[19]} alt="Outline Shader BP"/> 
+					<img src={Images[22]} alt="Outline Shader"/>
+				</div>
+				<p>I used a variety of shaders in this project. I made a toon shader and an outline shader for the main aesthetic of the game. I also added a “dark world” shader for the ending of the game. These are all added in post-processing. The barrier I made and some hit effects are some examples of shaders not included in post-processing.</p>
+			</div>
         </div>
       </div>
     );
