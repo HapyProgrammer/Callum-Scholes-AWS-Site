@@ -78,9 +78,11 @@ class App extends Component {
       <div className="page-container">
         <div className="header">
           <div className="header-container">
+          <NavLink  onMouseOver={()=> this.handleProjectPageFadeDirection("right")} onClick={(e) =>this.handleNavBar(0,e)} to="/" className="nav-link" activeClassName="active">
             <div className = "title-container">
               <h1 className="title">Callum Scholes</h1>
             </div>
+            </NavLink>
             <div className="nav">
               <NavLink  onMouseOver={()=> this.handleProjectPageFadeDirection("right")} onClick={(e) =>this.handleNavBar(0,e)} to="/" className="nav-link" activeClassName="active">
                 <div className="button-container">HOME</div>
