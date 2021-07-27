@@ -42,7 +42,7 @@ class ProjectImmortalProtector extends Component {
           </div>
           <div className="project-page-description">
             <h1>Leadership</h1>
-            <p>I was the leader of this game jam in a team of 4 people. I mostly just guided people on what we needed if they were lost on what to do for the game jam. I especially helped the other programmer as he was a novice programmer in Unity, so I made sure he still was able to contribute a lot with his skill set.</p>
+            <p>I was the leader of this game jam in a team of 4 people. I guided people on what we needed if they were unsure of what to do for the game jam. I especially helped the other programmer as he was a novice programmer in Unity, so I made sure he still contributed with his skill set.</p>
           </div>
         </div>
       </div>

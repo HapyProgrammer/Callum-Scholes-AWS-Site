@@ -226,7 +226,7 @@ class ProjectPolabisAdventure extends Component {
 				<div className="project-page-image-container">
 				<img src={Images[15]} alt="Finny Bones"/> 
 				</div>
-				<p>Due to Finny having no animations, it was fairly boring having him float around. Unreal’s bone chain system allows Finny to look more integrated into the world around him. However, Unreal’s bone chain system works starting from the root. To bypass this, I had to reverse the Armature to allow it to integrate nicely with Unreal’s system.</p>
+				<p>Due to Finny having no animations, it was boring having him float around. Unreal’s bone chain system allows Finny to look more integrated into the world around him. However, Unreal’s bone chain system works starting from the root. To bypass this, I had to reverse the Armature allowing it to integrate nicely with Unreal’s system.</p>
 			</div>
 			<div className="project-page-description">
 				<h1>Player spell system</h1>
@@ -246,7 +246,7 @@ class ProjectPolabisAdventure extends Component {
 				<SyntaxHighlighter className="project-code-block" language="csharp" style={ dracula }>
 						{code1}
 					</SyntaxHighlighter>
-				<p>I wanted Finny to feel integrated inside the world of the game. I added random bobbing both vertical and horizontally based on whether or not he is moving or idle. The bone chain system also helps with keeping him more visually interesting as he moves around. I also built a system where you can instruct him to be more aggressive or defensive in combat. This allows you to have some control over where Finny’s abilities target, whilst allowing Finny to freely move around during combat</p>
+				<p>I wanted Finny to feel integrated inside the world of the game. I added random bobbing both vertical and horizontally based on whether or not he is moving or idle. The bone chain system also helps with keeping him visually interesting as he moves around. I also built a system where you can instruct him to be more aggressive or defensive in combat. This allows you to have some control over where Finny’s abilities target. It also allows Finny to move freely during combat.</p>
 			</div>
 			<div className="project-page-description">
 				<h1>Cutscenes</h1>
@@ -281,7 +281,7 @@ class ProjectPolabisAdventure extends Component {
 					<img src={Images[19]} alt="Outline Shader BP"/> 
 					<img src={Images[22]} alt="Outline Shader"/>
 				</div>
-				<p>I used a variety of shaders in this project. I made a toon shader and an outline shader for the main aesthetic of the game. I also added a “dark world” shader for the ending of the game. These are all added in post-processing. The barrier I made and some hit effects are some examples of shaders not included in post-processing.</p>
+				<p>I used a variety of shaders in this project. For the main aesthetic of the game, I used a toon shader and an outline shader. I also added a “dark world” shader for the ending of the game. These are all added in post-processing. The barrier I made and some hit effects are some examples of shaders not included in post-processing.</p>
 			</div>
         </div>
       </div>

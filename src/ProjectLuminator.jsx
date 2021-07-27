@@ -41,7 +41,7 @@ class ProjectLuminator extends Component {
           
           <div className="project-page-description">
             <h1>Intiative and Leadership</h1>
-            <p>This project taught me a lot about taking initiative and leadership. Originally I was not the leader of this project. However, halfway through the game jam the artist, who was also the project lead, was suddenly unresponsive. I continued what I needed to do on the programming side, but other team members were getting frustrated with the lack of new art assets to add to the game. I took it upon myself to make the art assets, as well as continue working hard on the project. This gave the team a morale boost nearing the end of the game jam, which allowed us to barely finish the game on time.</p>
+            <p>This project taught me a lot about initiative and leadership. I was not the leader of this project at first. However, halfway through the game jam the artist, who was also the project lead, was suddenly unresponsive. I continued what I needed to do on the programming side, but other team members were frustrated with the lack of new art assets to add to the game. I took it upon myself to make the art assets while continuing to make scripts for the project. This gave the team a morale boost nearing the end of the game jam, which allowed us to finish the game on time.</p>
           </div>
           </div>
       </div>

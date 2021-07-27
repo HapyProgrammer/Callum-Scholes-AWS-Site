@@ -105,14 +105,14 @@ class ProjectSummonersDream extends Component {
                     <img src={Images[0]} alt="SummonersDream"/>
                     <img src={Images[21]} alt="SummonersDream"/>
                 </div>
-               <p>Summoner’s Dream is a mod made for the Summoner class with over 7000 downloads. It was made in Terraria using TModloader. This mod makes progressing through the early stages of the game a lot faster and easier. The new summons will accompany you until the late stages of the game where they will tend to struggle. Hopefully, by then you will have amassed some pretty good summoning gear to make the later bosses doable even in expert difficulty.</p>
+               <p>Summoner’s Dream is a mod made for the Summoner class with over 8000 downloads. It was made in Terraria using TModloader. This mod makes progressing through the early stages of the game a lot faster and easier. The new summons will accompany you until the late stages of the game where they will tend to struggle. Hopefully, by then you will have amassed some pretty good summoning gear to make the later bosses doable even in expert difficulty.</p>
             </div>
             <div className="project-page-description">
                 <h1>New Terraria AI</h1>
                 <SyntaxHighlighter className="project-code-block" language="csharp" style={ dracula }>
                     {code0}
                 </SyntaxHighlighter>
-                <p>One of the summons was a completely new melee summon I coded myself. Due to there being a very limited amount of melee summons in Terraria and even other mods, there was no easy way to make the new AI. I enjoy the idea of them clumping up trying to attack the enemies without overlapping too much to be all in the same position. </p>
+                <p>One of the summons was a completely new melee summon I coded myself. Due to there being a limited amount of melee summons in Terraria and even other mods, there was no easy way to make the new AI. I enjoy the idea of them clumping up trying to attack the enemies without overlapping too much to be all in the same position. </p>
             </div>
             <div className="project-page-description">
                 <h1>Sentries and summons in Terraria</h1>
