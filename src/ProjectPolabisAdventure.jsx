@@ -204,6 +204,11 @@ class ProjectPolabisAdventure extends Component {
         <div className="project-page-container">
 			<div className="project-page-title">
 			<h1>Polabi's Adventure</h1>
+			
+			<div className="project-page-image-container">
+				<img src={Images[20]} alt="Level"/> 
+				<img src={Images[16]} alt="Level"/> 
+			</div>
 			<div className="project-page-video">
 					<ReactPlayer 
 					className="project-page-video-player"
@@ -211,10 +216,6 @@ class ProjectPolabisAdventure extends Component {
 					height='506.25px'
 					url = "https://youtu.be/EHUA0wedYdU"/>
 			</div>
-			<div className="project-page-image-container">
-			<img src={Images[20]} alt="Level"/> 
-				<img src={Images[16]} alt="Level"/> 
-				</div>
 			<p>Polabi’s Adventure is an ARPG. You can unlock a variety of spells and add them to yourself and your buddies.</p>
 			</div>
 			<div className="project-page-description">
