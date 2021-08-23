@@ -214,7 +214,8 @@ class ProjectPolabisAdventure extends Component {
 					className="project-page-video-player"
 					width='100%'
 					height='506.25px'
-					url = "https://youtu.be/EHUA0wedYdU"/>
+					url = "https://youtu.be/EHUA0wedYdU"
+					muted/>
 			</div>
 			<p>Polabi’s Adventure is an ARPG. You can unlock a variety of spells and add them to yourself and your buddies.</p>
 			</div>
