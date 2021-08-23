@@ -43,7 +43,8 @@ class ProjectIHBQ extends Component {
                   className="project-page-video-player"
                   width='100%'
                   height='506.25px'
-                  url = "https://youtu.be/MqWoARks9zY"/>             
+                  muted
+                  url = "https://youtu.be/gaSboNzmfRA"/>             
 			      </div>
             <h3>Here are 4 unique boss battles. Each required a diffrent quest to activate</h3>
           </div>
