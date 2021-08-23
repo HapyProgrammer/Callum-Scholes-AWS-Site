@@ -204,6 +204,13 @@ class ProjectPolabisAdventure extends Component {
         <div className="project-page-container">
 			<div className="project-page-title">
 			<h1>Polabi's Adventure</h1>
+			<div className="project-page-video">
+					<ReactPlayer 
+					className="project-page-video-player"
+					width='100%'
+					height='506.25px'
+					url = "https://youtu.be/EHUA0wedYdU"/>
+			</div>
 			<div className="project-page-image-container">
 			<img src={Images[20]} alt="Level"/> 
 				<img src={Images[16]} alt="Level"/> 
