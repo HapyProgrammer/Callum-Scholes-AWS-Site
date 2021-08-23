@@ -116,9 +116,11 @@ class ProjectSummonersDream extends Component {
             </div>
             <div className="project-page-description">
                 <h1>Sentries and summons in Terraria</h1>
-                <div className="project-page-image">
-                    <img src={Images[0]} alt="SummonersDream"/>                   
+                <div className="project-page-image-container">
+                    <img src={Images[0]} alt="SummonersDream"/>   
+                    <img src={Images[23]} alt="SummonersDream"/>                 
                 </div>
+
                 <div className="project-page-video">
                 <ReactPlayer 
                   className="project-page-video-player"

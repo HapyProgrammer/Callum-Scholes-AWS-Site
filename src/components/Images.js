@@ -21,6 +21,7 @@ import PAOutlineShaderBP2 from "./Images/OutlineShaderBP2.png";
 import PATitle from "./Images/PolabisAdventureTitle.png";
 import SDMoonlordFight from "./Images/SDMoonlordFight.png";
 import PACelShader from "./Images/PACelShader.PNG";
+import TerrariaScreenShot from "./Images/TerrariaScreenshot.png"
 
 const ImageArray = [
   SummonersDream,
@@ -45,7 +46,8 @@ const ImageArray = [
   PAOutlineShaderBP2,
   PATitle,
   SDMoonlordFight,
-  PACelShader
+  PACelShader,
+  TerrariaScreenShot
 ];
 
 export default ImageArray;
